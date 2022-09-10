@@ -22,7 +22,7 @@ body {
   /* min-height: 100vh; */
   /* display: grid; */
   /* place-items: center; */
-  background: rgb(23 23 23/1);
+  background: black;
   overflow: hidden;
   overflow-y: auto;
   /* transform-style: preserve-3d; */
@@ -242,7 +242,7 @@ p {
 
 nav {
   width: 100%;
-  background: #222;
+  background: black;
   padding: 0 15px;
   position: sticky;
   z-index: 10;
@@ -257,10 +257,10 @@ nav li a {
 }
 .logo {
   font-size: 20px;
-  padding: 7.5px 10px 7.5px 0;
+  padding: 0px 10px 0px 0;
 }
 .item {
-  padding: 10px;
+  padding: 0px 10px;
 }
 .item.button {
   padding: 0px;
@@ -325,7 +325,7 @@ nav li a {
   }
   /* Button up from tablet screen */
   .menu li.button a {
-    padding: 10px 15px;
+    padding: 0px 15px;
     margin: 5px 0;
   }
   .button a {
