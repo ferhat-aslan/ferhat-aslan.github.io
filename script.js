@@ -99,3 +99,23 @@ window.onload = function () {
   css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
   document.body.appendChild(css);
 };
+const toggle = document.querySelector(".toggle");
+const menu = document.querySelector(".menu");
+const items = document.querySelectorAll(".item");
+
+/* Toggle mobile menu */
+function toggleMenu() {
+  if (menu.classList.contains("active")) {
+    menu.classList.remove("active");
+    toggle.querySelector("a").innerHTML =
+      "<img style='width:30px;height:30px' src='./menu-4-48.png'/>";
+  } else {
+    menu.classList.add("active");
+    toggle.querySelector("a").innerHTML =
+      "<img style='width:30px;height:30px' src='./x-mark-48.png'/>";
+  }
+}
+
+particlesJS.load("particles-js", "./particles.json", function () {
+  console.log("callback - particles.js config loaded");
+});

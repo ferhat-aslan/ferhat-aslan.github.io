@@ -8,26 +8,62 @@
     <title>Document</title>
   </head>
   <body>
+    <nav>
+      <ul class="menu">
+        <li class="logo"><a href="#">Ferhat ASLAN</a></li>
+        <li class="item"><a href="#">Home</a></li>
+        <li class="item"><a href="#tech">Tech Stack</a></li>
+        <li class="item">
+          <a href="#experience">Experience</a>
+        </li>
+        <li class="item">
+          <a href="#experience">Projects</a>
+        </li>
+        <li class="item"><a href="">Contact</a></li>
+        <li class="item button">
+          <a target="_blank" href="https://www.linkedin.com/in/aslanferhat"
+            ><img style="height: 40px; width: auto" src="./linkedin.png" alt=""
+          /></a>
+        </li>
+        <li class="item button secondary">
+          <a target="_blank" href="https://github.com/ferhat-aslan"
+            ><img style="height: 40px; width: auto" src="./github.png" alt=""
+          /></a>
+        </li>
+        <li class="toggle">
+          <a href="#"
+            ><img
+              style="width: 30px; height: 30px"
+              src="./menu-4-48.png"
+              alt=""
+          /></a>
+        </li>
+      </ul>
+    </nav>
     <div class="container-home">
+      <div id="particles-js"></div>
       <a
         style="font-size: 30px"
         href=""
         class="typewrite"
         data-period="2000"
         data-type='[ "Hi, I am Ferhat. ", "I am Frontend developer", "I Love coding.", "I Love to Develop." ]'
+        ><span class="wrap">Hi, I a</span></a
       >
-        <span class="wrap"></span>
-      </a>
+      <div class="buttons">
+        <button class="hire-button">Hire Me</button>
+        <button class="download-button">Download Resume</button>
+      </div>
       <div class="scrolldown-wrapper">
         <div class="scrolldown">
           <svg height="30" width="10">
-            <circle class="scrolldown-p1" cx="5" cy="15" r="2" />
-            <circle class="scrolldown-p2" cx="5" cy="15" r="2" />
+            <circle class="scrolldown-p1" cx="5" cy="15" r="2"></circle>
+            <circle class="scrolldown-p2" cx="5" cy="15" r="2"></circle>
           </svg>
         </div>
       </div>
     </div>
-    <div class="container">
+    <div id="tech" class="container">
       <!-- <div class="leftpane">
         
         <div><img class="object-fit " src="./profile-pic.png" alt="">
@@ -416,26 +452,10 @@
         </div>
       </div> -->
     </div>
-    <div class="container-experience">
-      <a
-        style="font-size: 30px"
-        href=""
-        class="typewrite"
-        data-period="2000"
-        data-type='[ "Hi, I am Ferhat. ", "I am Frontend developer", "I Love coding.", "I Love to Develop." ]'
-      >
-        <span class="wrap"></span>
-      </a>
-      <div class="scrolldown-wrapper">
-        <div class="scrolldown">
-          <svg height="30" width="10">
-            <circle class="scrolldown-p1" cx="5" cy="15" r="2" />
-            <circle class="scrolldown-p2" cx="5" cy="15" r="2" />
-          </svg>
-        </div>
-      </div>
-    </div>
+    <div id="experience" class="container-experience"></div>
   </body>
+  <script src="particles.js"></script>
+
   <script src="script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/Flip.min.js"></script>
