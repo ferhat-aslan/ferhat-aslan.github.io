@@ -104,6 +104,7 @@ const menu = document.querySelector(".menu");
 const items = document.querySelectorAll(".item");
 
 /* Toggle mobile menu */
+toggle.addEventListener("click", toggleMenu);
 function toggleMenu() {
   if (menu.classList.contains("active")) {
     menu.classList.remove("active");
@@ -115,7 +116,6 @@ function toggleMenu() {
       "<img style='width:30px;height:30px' src='./x-mark-48.png'/>";
   }
 }
-
 particlesJS.load("particles-js", "./particles.json", function () {
   console.log("callback - particles.js config loaded");
 });
